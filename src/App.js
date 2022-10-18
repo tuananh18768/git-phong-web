@@ -1,23 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
+import 'antd/dist/antd.css';
+import AgentManagement from './components/Admin/AgentManagement';
+import LocalityManagement from './components/Admin/Locality/LocalityManagement';
+import Login from './components/Agent/Login';
+import OrderManagemet from './components/Agent/OrderManagemet';
+
+
+import ShipperManagement from './components/Agent/ShipperManagement'
+import SimManagement from './components/Agent/SimManagement';
+import DeliveryHistory from './components/Shipper/DeliveryHistory';
+import DetailOfOrder from './components/Shipper/DetailOfOrder';
+
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <DetailOfOrder/>
     </div>
   );
 }
